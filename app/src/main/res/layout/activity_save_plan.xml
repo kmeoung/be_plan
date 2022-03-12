@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_state" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <kr.timehub.beplan.base.widgets.BaseMainToolBar android:id="@+id/base_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/default_action_bar_height"/>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:gravity="bottom" android:layout_width="match_parent" android:layout_height="27dp" android:layout_marginBottom="10dp" android:text="프로젝트 제목" app:Font="1"/>
+        <kr.timehub.beplan.base.widgets.EditText android:textSize="18sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:id="@+id/et_project" android:background="@drawable/input_bg" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="16dp" app:Font="0"/>
+    </LinearLayout>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="10dp"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="8.5dp" android:paddingRight="10dp" android:paddingBottom="8.5dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_save" android:background="@drawable/btn_grdt_07" android:layout_width="0dp" android:layout_height="38dp" android:layout_marginRight="10dp" android:text="플랜 저장하기" android:layout_weight="1" app:Font="1"/>
+        <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/btn_cancel" android:background="@drawable/btn_wht_04" android:layout_width="0dp" android:layout_height="38dp" android:layout_marginRight="10dp" android:text="취소" android:layout_weight="1" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

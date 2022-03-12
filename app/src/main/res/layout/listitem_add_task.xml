@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="87dp" android:layout_height="87dp">
+    <ImageView android:id="@+id/iv_contents" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_thumb_x" android:scaleType="centerCrop" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/iv_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_thumb_v" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/iv_link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_thumb_l" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

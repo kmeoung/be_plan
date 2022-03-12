@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:background="@color/lavender_blush" android:layout_width="match_parent" android:layout_height="67.33dp" android:layout_marginBottom="9.67dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.33dp" android:text="MY 프로젝트" app:Font="0"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="26.67sp" android:textColor="@color/refical_red" android:ellipsize="end" android:id="@+id/tv_project_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0" android:maxLines="1" android:lines="1" app:Font="1"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="개" app:Font="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/tv_my_work_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.33dp" android:text="너의 업무" app:Font="0"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="26.67sp" android:textColor="@color/refical_red" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0" android:maxLines="1" android:lines="1" app:Font="1"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="개" app:Font="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.33dp" android:text="미확인 알림" app:Font="0"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="26.67sp" android:textColor="@color/refical_red" android:ellipsize="end" android:id="@+id/tv_notification_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0" android:maxLines="1" android:lines="1" app:Font="1"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="개" app:Font="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

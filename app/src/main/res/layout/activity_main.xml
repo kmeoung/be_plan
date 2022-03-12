@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_drawer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/v_state" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <kr.timehub.beplan.base.widgets.BaseMainToolBar android:id="@+id/base_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/default_action_bar_height"/>
+                <FrameLayout android:id="@+id/base_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="left" android:id="@+id/layout_slide_menu" android:background="@color/background_drawer" android:layout_width="268dp" android:layout_height="match_parent"/>
+</android.support.v4.widget.DrawerLayout>

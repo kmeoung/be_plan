@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_gray_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="#e0e9f5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="42.67dp">
+        <ImageView android:id="@+id/iv_left" android:layout_width="42.67dp" android:layout_height="42.67dp" android:src="@drawable/btn_arrow_left" android:scaleType="centerInside"/>
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="17.31sp" android:textColor="@color/rifle_green" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:Font="1"/>
+        <ImageView android:id="@+id/iv_right" android:layout_width="42.67dp" android:layout_height="42.67dp" android:src="@drawable/btn_arrow_right" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_gray_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="#e0e9f5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:background="@color/background_gray_color" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_comment_contents" android:background="@drawable/img_thumbnail_gdt" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/iv_comment_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_left"/>
+        <kr.timehub.beplan.base.widgets.BaseFileViewPager android:id="@+id/base_comment_viewpager" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_comment_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_right"/>
+    </LinearLayout>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/background_gray_color" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+        <LinearLayout android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="38dp" android:layout_weight="1">
+            <kr.timehub.beplan.base.widgets.EditText android:textSize="16sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:gravity="center_vertical" android:id="@+id/et_keyword" android:background="@drawable/input_bg_half" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/str_hint_write" android:layout_weight="1" app:Font="0"/>
+            <ImageButton android:id="@+id/btn_upload" android:background="@drawable/btn_upload" android:visibility="visible" android:layout_width="33.33dp" android:layout_height="33.33dp"/>
+            <ImageButton android:id="@+id/btn_write" android:background="@drawable/btn_write" android:layout_width="33.33dp" android:layout_height="33.33dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

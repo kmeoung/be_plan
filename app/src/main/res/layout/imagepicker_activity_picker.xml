@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.nguyenhoanglam.imagepicker.widget.ImagePickerToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_empty" android:padding="@dimen/imagepicker_padding_large" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/imagepicker_ic_image"/>
+        <TextView android:textStyle="bold" android:textColor="@color/imagepicker_grey" android:gravity="center_horizontal" android:layout_marginTop="@dimen/imagepicker_margin_medium" android:text="@string/imagepicker_msg_no_images" style="@style/imagepicker_TextLarge"/>
+    </LinearLayout>
+    <com.nguyenhoanglam.imagepicker.widget.ProgressWheel android:id="@+id/progressWheel" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerInParent="true" wheel:matProg_barColor="@color/imagepicker_teal" wheel:matProg_progressIndeterminate="true"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <com.nguyenhoanglam.imagepicker.widget.SnackBarView android:id="@+id/snackbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/recyclerView" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

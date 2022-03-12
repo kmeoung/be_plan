@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_horizontal">
+        <shape>
+            <size android:height="20dp" android:width="1dp"/>
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+    <item android:gravity="bottom" android:drawable="@drawable/btn_decibel_handle" android:top="35dp"/>
+</layer-list>

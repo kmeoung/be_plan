@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:layout_marginRight="30dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/settings_push_title" android:layout_weight="1" app:Font="1"/>
+        <Switch android:id="@+id/switch_push" android:layout_width="60dp" android:layout_height="35dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:layout_marginRight="30dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_push_time" app:Font="1"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+            <TextView android:gravity="center" android:id="@+id/tv_start_date" android:background="@color/light_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <TextView android:textSize="23dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="-"/>
+            <TextView android:gravity="center" android:id="@+id/tv_end_date" android:background="@color/light_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_save" android:background="@drawable/recive_grdt" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" android:layout_marginRight="30dp" android:layout_marginBottom="0dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_save" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

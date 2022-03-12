@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kr.timehub.beplan.base.widgets.TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="13sp" android:textColor="@color/textColor" android:textColorHint="@color/textColor" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_permissions" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:hint="팀을 선택해주세요" android:maxLines="1" android:lines="1" android:maxLength="7" app:Font="0"/>

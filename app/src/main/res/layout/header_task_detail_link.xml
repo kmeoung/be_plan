@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@null" android:layout_width="match_parent" android:layout_height="200dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_contents" android:layout_width="match_parent" android:layout_height="188.88dp" android:layout_marginLeft="10.01dp" android:layout_marginRight="10.01dp" android:layout_marginBottom="10.43dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="188.88dp">
+            <ImageView android:background="@color/rifle_green" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="157.97dp">
+                <ImageView android:id="@+id/iv_link" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <ImageView android:background="@color/translucency" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_thumb_link" android:scaleType="centerInside"/>
+            </RelativeLayout>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_url" android:background="@color/light_slate_gray" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="30.91dp" app:Font="0"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_more" android:visibility="gone" android:layout_width="73.33dp" android:layout_height="26.67dp" android:src="@drawable/btn_thumb_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

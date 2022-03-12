@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bottom_tab_all_list">
+        <item>@string/str_view_all</item>
+        <item>@string/str_view_running</item>
+        <item>@string/str_view_wating</item>
+        <item>@string/str_view_refuse</item>
+        <item>@string/str_view_request_cancel</item>
+        <item>@string/str_view_complete</item>
+    </array>
+    <array name="bottom_tab_my_list">
+        <item>@string/str_view_all</item>
+        <item>@string/str_view_running</item>
+        <item>@string/str_view_complete</item>
+    </array>
+    <array name="bottom_tab_receive_list">
+        <item>@string/str_view_all</item>
+        <item>@string/str_view_running</item>
+        <item>@string/str_view_wating</item>
+        <item>@string/str_view_complete</item>
+    </array>
+    <array name="bottom_tab_send_list">
+        <item>@string/str_view_all</item>
+        <item>@string/str_view_running</item>
+        <item>@string/str_view_wating</item>
+        <item>@string/str_view_refuse</item>
+        <item>@string/str_view_request_cancel</item>
+        <item>@string/str_view_complete</item>
+    </array>
+</resources>

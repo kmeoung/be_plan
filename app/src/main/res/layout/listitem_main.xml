@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/box_project" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="108dp" android:layout_weight="1">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:id="@+id/tv_project" android:padding="12dp" android:layout_width="0dp" android:layout_height="108dp" android:layout_weight="1" app:Font="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="45dp" android:layout_height="108dp">
+            <ImageView android:id="@+id/iv_more" android:visibility="visible" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/btn_more_gray" android:scaleType="center" android:contentDescription="@string/str_project_menu"/>
+            <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_notice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_notice"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

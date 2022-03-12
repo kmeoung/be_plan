@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="27dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <android.support.design.widget.TabLayout android:id="@+id/tab_layout" android:layout_width="0dp" android:layout_height="27dp" android:layout_weight="1" app:tabIndicatorHeight="0dp" app:tabMode="1"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_dropdown" android:background="@drawable/input_bg" android:layout_width="75dp" android:layout_height="match_parent" android:layout_marginLeft="10dp">
+            <Spinner android:id="@+id/sp_dropdown" android:background="@null" android:layout_width="0dp" android:layout_height="27dp" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icn_drpdwn"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/vPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1"/>
+</LinearLayout>

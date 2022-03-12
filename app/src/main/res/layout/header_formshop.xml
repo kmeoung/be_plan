@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="66.67dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_header_bg" android:background="#2fb6e8" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_icon" android:layout_width="60dp" android:layout_height="match_parent" android:layout_marginLeft="13dp" android:layout_marginRight="21.67dp" android:src="@drawable/img_airplan" android:scaleType="centerInside"/>
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="여행" android:maxLines="1" android:lines="1" android:layout_weight="1" app:Font="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_more" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/btn_expand_blue" android:scaleType="centerInside"/>
+</LinearLayout>

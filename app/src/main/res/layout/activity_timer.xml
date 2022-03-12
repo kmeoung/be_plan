@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_status" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:gravity="center" android:id="@+id/tv_p_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64dp" android:layout_marginBottom="10dp" android:text="" app:Font="1"/>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/taupe_gray" android:layout_width="1dp" android:layout_height="20dp" android:layout_marginBottom="10dp"/>
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:id="@+id/tv_cg_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="" app:Font="1"/>
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/taupe_gray" android:layout_width="1dp" android:layout_height="20dp" android:layout_marginBottom="10dp"/>
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:id="@+id/tv_t_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="42dp" android:text="" app:Font="0"/>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="133.33dp" android:layout_height="133.33dp" android:layout_marginBottom="40dp" android:src="@drawable/img_complete"/>
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="타이머가 종료되었습니다.\10음성 또는 닫기버튼으로 알람을 종료하세요." app:Font="0"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="66.67dp" android:src="@drawable/img_mic2" android:scaleType="centerInside"/>
+    <kr.timehub.beplan.base.widgets.Button android:textSize="15.36sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_stop_timer" android:background="@drawable/btn_close" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="9.33dp" android:layout_marginRight="9.33dp" android:layout_marginBottom="8.33dp" android:text="닫기" app:Font="1"/>
+</LinearLayout>

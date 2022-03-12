@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_save" android:background="@drawable/btn_02" android:layout_width="match_parent" android:layout_height="38dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="저장" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

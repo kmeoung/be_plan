@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/wht_post_bg" android:layout_width="281.3281dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/pop_top" android:layout_width="match_parent" android:layout_height="50dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="center_vertical" android:paddingLeft="17.33dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="거절 사유" android:layout_weight="1" app:Font="1"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/btn_close_vd" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="16.67dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/black" android:paddingLeft="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.67dp" android:text="거절 사유 입력" app:Font="0"/>
+        <kr.timehub.beplan.base.widgets.EditText android:textSize="12sp" android:textColor="@color/black" android:textColorHint="@color/taupe_gray" android:gravity="top|left" android:id="@+id/et_refuse" android:background="@drawable/input2_middle" android:paddingLeft="14dp" android:paddingTop="11.33dp" android:paddingBottom="11.33dp" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:hint="거절 사유를 입력해주세요." app:Font="0"/>
+        <Button android:id="@+id/btn_submit_ok" android:background="@drawable/btn_pop_ok" android:layout_width="match_parent" android:layout_height="46.67dp" android:layout_marginLeft="14dp" android:layout_marginTop="16.67dp" android:layout_marginRight="14dp" android:layout_marginBottom="11.33dp"/>
+    </LinearLayout>
+</LinearLayout>

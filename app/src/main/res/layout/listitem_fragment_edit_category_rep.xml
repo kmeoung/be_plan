@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="@drawable/wht_post_bg" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/tv_task_title" android:layout_width="0dp" android:layout_height="wrap_content" android:baselineAligned="false" android:text="" android:layout_weight="1" app:Font="0"/>
+    <RelativeLayout android:id="@+id/rl_bg" android:background="@drawable/input_bg" android:layout_width="130dp" android:layout_height="35dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_rep" android:paddingLeft="9dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:textColorHint="@color/textColor" android:gravity="center" android:id="@+id/tv_rep" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="" android:layout_weight="1" app:Font="0"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="6dp" android:src="@drawable/icn_drpdwn"/>
+        </LinearLayout>
+        <Spinner android:id="@+id/sp_dropdown" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </RelativeLayout>
+</LinearLayout>

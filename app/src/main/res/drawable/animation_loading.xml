@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/back_00000"/>
+    <item android:duration="60" android:drawable="@drawable/back_00001"/>
+    <item android:duration="60" android:drawable="@drawable/back_00002"/>
+    <item android:duration="60" android:drawable="@drawable/back_00003"/>
+    <item android:duration="60" android:drawable="@drawable/back_00004"/>
+    <item android:duration="60" android:drawable="@drawable/back_00005"/>
+    <item android:duration="60" android:drawable="@drawable/back_00006"/>
+    <item android:duration="60" android:drawable="@drawable/back_00007"/>
+    <item android:duration="60" android:drawable="@drawable/back_00008"/>
+    <item android:duration="60" android:drawable="@drawable/back_00009"/>
+    <item android:duration="60" android:drawable="@drawable/back_00010"/>
+    <item android:duration="60" android:drawable="@drawable/back_00011"/>
+    <item android:duration="60" android:drawable="@drawable/back_00012"/>
+    <item android:duration="60" android:drawable="@drawable/back_00013"/>
+    <item android:duration="60" android:drawable="@drawable/back_00014"/>
+    <item android:duration="60" android:drawable="@drawable/back_00015"/>
+    <item android:duration="60" android:drawable="@drawable/back_00016"/>
+    <item android:duration="60" android:drawable="@drawable/back_00017"/>
+    <item android:duration="60" android:drawable="@drawable/back_00018"/>
+    <item android:duration="60" android:drawable="@drawable/back_00019"/>
+    <item android:duration="60" android:drawable="@drawable/back_00020"/>
+    <item android:duration="60" android:drawable="@drawable/back_00021"/>
+    <item android:duration="60" android:drawable="@drawable/back_00022"/>
+    <item android:duration="60" android:drawable="@drawable/back_00023"/>
+    <item android:duration="60" android:drawable="@drawable/back_00024"/>
+    <item android:duration="60" android:drawable="@drawable/back_00025"/>
+    <item android:duration="60" android:drawable="@drawable/back_00026"/>
+    <item android:duration="60" android:drawable="@drawable/back_00027"/>
+    <item android:duration="60" android:drawable="@drawable/back_00028"/>
+    <item android:duration="60" android:drawable="@drawable/back_00029"/>
+</animation-list>

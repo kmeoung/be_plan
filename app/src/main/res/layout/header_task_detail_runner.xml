@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="6.67dp">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="51dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4">
+                <ImageView android:id="@+id/iv_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="17dp" android:layout_marginRight="6dp" android:src="@drawable/img_user_profiles"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:maxLines="1" android:lines="1" app:Font="0"/>
+                    <ImageView android:id="@+id/iv_me" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bdg_me"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:src="@drawable/img_arrow"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4">
+                <ImageView android:id="@+id/iv_sender_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="14dp" android:src="@drawable/img_user_profiles"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:maxWidth="50dp" android:layout_weight="1">
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:maxLines="1" android:lines="1" app:Font="0"/>
+                    <ImageView android:id="@+id/iv_sender_me" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bdg_me"/>
+                </LinearLayout>
+            </LinearLayout>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:maxWidth="60dp" android:text="16. 06. 15" android:maxLines="2" app:Font="0"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

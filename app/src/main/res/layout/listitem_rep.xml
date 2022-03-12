@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="160dp" android:layout_height="34dp">
+            <ImageView android:id="@+id/iv_photo" android:visibility="visible" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/blur_bg"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingRight="9dp" android:layout_width="0dp" android:layout_height="34dp" android:layout_marginLeft="9dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="송영범" android:maxLines="1" app:Font="0"/>
+                    <ImageView android:id="@+id/iv_me" android:visibility="gone" android:layout_width="24dp" android:layout_height="14dp" android:src="@drawable/bdg_me"/>
+                </LinearLayout>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:ellipsize="end" android:id="@+id/tv_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="example@example.com" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="9dp" android:visibility="invisible" android:layout_width="98dp" android:layout_height="match_parent">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/str_permission_admin" android:layout_weight="1" app:Font="0"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bg" android:paddingLeft="9dp" android:visibility="invisible" android:layout_width="72dp" android:layout_height="match_parent" android:layout_marginLeft="8dp">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="취소" android:layout_weight="1" app:Font="0"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="6dp" android:src="@drawable/btn_close_gray_2" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

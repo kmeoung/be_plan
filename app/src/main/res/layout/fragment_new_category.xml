@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="100dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:text="카테고리 제목" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.EditText android:textSize="18sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:id="@+id/et_categoty_title" android:background="@drawable/input_bg" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:hint="제목을 입력해주세요" android:maxLines="1" android:lines="1" android:inputType="text" app:Font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_save" android:background="@drawable/btn_gray_02" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.5dp" android:layout_marginBottom="8.5dp" android:foreground="?attr/selectableItemBackgroundBorderless" android:text="저장" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

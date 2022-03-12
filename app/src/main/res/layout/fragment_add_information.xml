@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@null" android:paddingLeft="54dp" android:paddingRight="54dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <kr.timehub.beplan.base.widgets.EditText android:textSize="18sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:id="@+id/et_name" android:background="@drawable/input_bg" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="28dp" android:text="" android:hint="이메일을 입력해주세요" android:inputType="textPersonName" app:Font="0"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_start" android:background="@drawable/btn_wht_line" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="28dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="시작하기" app:Font="1"/>
+    </LinearLayout>
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="로그인하신 계정에 이메일 정보가 없으니\10추가로 입력해주세요" app:Font="0"/>
+</LinearLayout>

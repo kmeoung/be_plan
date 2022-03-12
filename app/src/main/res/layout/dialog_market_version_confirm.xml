@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/dialog_market_version_confirm_0" android:background="@android:color/white" android:layout_width="272dp" android:layout_height="wrap_content" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15.6dp" android:paddingTop="26.7dp" android:paddingRight="15.6dp" android:paddingBottom="13.7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/nanum_barun_gothic"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/checkbox_market_update_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:theme="@style/BasicCheckBox" android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/checkbox_market_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_checkbox_msg_market_update" android:fontFamily="@font/nanum_barun_gothic"/>
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.5dp">
+            <Button android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_cancel" android:background="@android:color/white" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackgroundBorderless" android:text="@string/str_cancel" android:layout_weight="1" android:fontFamily="@font/nanum_barun_gothic"/>
+            <View android:background="@android:color/darker_gray" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/btn_ok" android:background="@android:color/white" android:layout_width="0dp" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackgroundBorderless" android:text="@string/str_update" android:layout_weight="1" android:fontFamily="@font/nanum_barun_gothic"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

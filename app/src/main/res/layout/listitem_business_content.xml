@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="70dp">
+        <kr.timehub.beplan.base.widgets.TextView android:gravity="right" android:id="@+id/tv_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_business_content" android:background="@color/white" android:focusable="true" android:layout_width="match_parent" android:layout_height="70dp">
+            <ImageView android:id="@+id/iv_icn_check" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="12dp" android:src="@drawable/btn_check_on" android:scaleType="center" android:contentDescription="@string/str_enable_disable_task"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_business" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="업무내용" android:maxLines="1" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="11sp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_business_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="1" app:Font="0"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:Font="0"/>
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_date_middle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="~" app:Font="0"/>
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_finish_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:Font="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="50dp" android:text="이현우" android:maxLines="1" android:lines="1" app:Font="0"/>
+                <ImageView android:id="@+id/iv_me_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/bdg_me"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp"/>
+            <kr.timehub.beplan.base.widgets.Button android:textSize="12sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/btn_timer" android:background="@null" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp" android:text="시작" app:Font="1"/>
+            <ImageView android:id="@+id/iv_move" android:visibility="gone" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/btn_menu_yel"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@null" android:layout_width="280dp" android:layout_height="256dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/pop_box" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="50.67dp">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center_vertical" android:id="@+id/tv_title" android:paddingLeft="6dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/str_alert" android:layout_weight="1" app:Font="1"/>
+            <ImageView android:id="@+id/iv_close" android:background="@drawable/btn_close" android:layout_width="50dp" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <ImageView android:background="@color/popup_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="205.33dp">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/trolleygrey" android:gravity="center" android:id="@+id/tv_contents" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/str_email_check" app:Font="0"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="18.67sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_email" android:layout_width="match_parent" android:layout_height="0dp" android:text="email" android:layout_weight="1" app:Font="0"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+                <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/textColor" android:gravity="center" android:id="@+id/btn_negative" android:background="@drawable/btn_wht_05" android:layout_width="0dp" android:layout_height="48dp" android:layout_marginRight="8.66dp" android:text="@string/str_cancel" android:layout_weight="1" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_positive" android:background="@drawable/btn_grdt_05" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/str_register" android:layout_weight="1" app:Font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:gravity="center_vertical" android:id="@+id/tv_project" android:paddingLeft="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:Font="0"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_divider" android:background="@color/divider_color_1" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

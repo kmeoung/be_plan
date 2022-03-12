@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@null" android:layout_width="match_parent" android:layout_height="210.67dp">
+    <ImageView android:id="@+id/iv_divider" android:background="@color/rifle_green" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10.01dp" android:layout_marginRight="10.01dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_contents" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginLeft="10.01dp" android:layout_marginRight="10.01dp" android:layout_below="@+id/iv_divider">
+        <ImageView android:background="@color/rifle_green" android:layout_width="1dp" android:layout_height="200dp"/>
+        <ImageView android:id="@+id/iv_contents" android:layout_width="0dp" android:layout_height="200dp" android:scaleType="centerCrop" android:layout_weight="1"/>
+        <ImageView android:background="@color/rifle_green" android:layout_width="1dp" android:layout_height="200dp"/>
+    </LinearLayout>
+    <ImageView android:background="@color/rifle_green" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10.01dp" android:layout_marginRight="10.01dp" android:layout_marginBottom="10.67dp" android:layout_below="@+id/ll_contents"/>
+    <ImageView android:id="@+id/iv_more" android:visibility="gone" android:layout_width="73.33dp" android:layout_height="26.67dp" android:src="@drawable/btn_thumb_more" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

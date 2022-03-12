@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="취소" android:layout_weight="1"/>
+        <kr.timehub.beplan.base.widgets.TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="확인" android:layout_weight="1"/>
+    </LinearLayout>
+    <kr.timehub.beplan.base.widgets.BaseCropImage android:id="@+id/base_crop_image" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

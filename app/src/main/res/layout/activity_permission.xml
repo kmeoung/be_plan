@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/splash_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_status" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="22sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.33dp" android:minHeight="37dp" android:text="권한 설정" app:Font="1"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="13sp" android:typeface="sans" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="76dp" android:text="2017년 3월 23일부터 시행되는 정보통신망법령에 맞추어\10서비스이용에 꼭 필요한 항목만 필수 접근하고 있습니다."/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="25dp" android:text="필수적 접근 권한" app:Font="1"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/img_round_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.33dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17.33dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="76dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/img_memory"/>
+                        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:typeface="sans" android:textColor="@color/rifle_green" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="프로젝트 생성시 파일첨부를 위해\10저장소 권한이 필요합니다." android:layout_weight="1" app:Font="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/taupe_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17.33dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="76dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/img_camera"/>
+                        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:typeface="sans" android:textColor="@color/rifle_green" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="프로젝트 생성시 촬영사진을 첨부할 수 있도록\10카메라 권한이 필요합니다." android:layout_weight="1" app:Font="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/taupe_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="17.33dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="76dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/img_mic"/>
+                        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:typeface="sans" android:textColor="@color/rifle_green" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="타이머 종료 알림시 목소리로 끌 수 있도록\10녹음 권한이 필요합니다." android:layout_weight="1" app:Font="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/img_round_box_warrning" android:paddingBottom="21.67dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/sunset_orange" android:gravity="center" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.33dp" android:text="경고: 권한을 설정하지 않으면 이용에 어려움이 있을 수 있습니다." app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="23.33dp" android:text="접근권한 변경 방법" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="13.33dp" android:text="휴대폰 설정 &gt; 애플리케이션 관리 &gt; Be:plan" app:Font="1"/>
+            </LinearLayout>
+            <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="17.36sp" android:typeface="sans" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_confirm" android:background="@null" android:layout_width="match_parent" android:layout_height="47.67dp" android:layout_marginLeft="53dp" android:layout_marginRight="53dp" android:layout_marginBottom="19.67dp" android:text="동의 및 시작" app:Font="1"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

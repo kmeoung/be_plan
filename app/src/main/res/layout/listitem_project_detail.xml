@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_gray_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/wht_post_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/iv_sender_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="14dp" android:src="@drawable/img_user_profiles"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:gravity="center_vertical" android:id="@+id/tv_sender_name" android:paddingLeft="9dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="송영범" android:layout_weight="1" app:Font="0"/>
+            <ImageView android:id="@+id/iv_edit_cmt" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/btn_edit_cmt"/>
+            <ImageView android:id="@+id/iv_del_cmt" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/btn_del_cmt"/>
+        </LinearLayout>
+        <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="14dp" android:paddingTop="12dp" android:paddingRight="14dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:id="@+id/tv_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OO 파일을 수정하여 새로 올려두었습니다." app:Font="0"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_comment_contents" android:visibility="gone" android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginTop="9.67dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_the_plural" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/iv_first" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1"/>
+                    <android.support.v4.widget.Space android:layout_width="10dp" android:layout_height="match_parent"/>
+                    <RelativeLayout android:id="@+id/rl_second_img" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_second" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_img_size" android:background="@color/translucency" android:layout_width="match_parent" android:layout_height="match_parent" android:text="+ (1) 장" android:layout_centerInParent="true" app:Font="1"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_one_thing" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6월 15일" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="-" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="오후 3시 42분" app:Font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

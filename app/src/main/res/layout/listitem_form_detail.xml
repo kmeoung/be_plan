@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/input_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_item" android:layout_width="match_parent" android:layout_height="50dp">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:gravity="center_vertical" android:id="@+id/tv_project" android:paddingLeft="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:Font="1"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_version_set" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="버전"/>
+                <RelativeLayout android:id="@+id/rl_bg" android:background="@drawable/input_bg" android:layout_width="100dp" android:layout_height="match_parent">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_version" android:paddingLeft="9dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:textColorHint="@color/textColor" android:gravity="left" android:id="@+id/tv_version" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="" android:layout_weight="1" app:Font="0"/>
+                        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="6dp" android:src="@drawable/icn_drpdwn"/>
+                    </LinearLayout>
+                    <Spinner android:id="@+id/sp_dropdown" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_more" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/btn_more_gray"/>
+            <ImageView android:id="@+id/iv_tab" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/btn_tab_close"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <android.support.v7.widget.RecyclerView android:id="@+id/list_rv" android:background="@drawable/input_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="8.5dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_use" android:background="@drawable/btn_grdt_07" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <ImageView android:id="@+id/iv_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/icn_down"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="카테고리 사용하기" app:Font="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nguyenhoanglam.imagepicker.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:foregroundGravity="center">
+    <ImageView android:id="@+id/image_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/view_alpha" android:background="@color/imagepicker_black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textColor="@color/imagepicker_white" android:layout_gravity="bottom" android:id="@+id/gif_indicator" android:background="@color/imagepicker_black_alpha_50" android:paddingLeft="@dimen/imagepicker_padding_large" android:paddingTop="@dimen/imagepicker_padding_small" android:paddingRight="@dimen/imagepicker_padding_large" android:paddingBottom="@dimen/imagepicker_padding_small" android:visibility="visible" android:text="@string/imagepicker_text_gif" style="@style/imagepicker_TextSmall"/>
+</com.nguyenhoanglam.imagepicker.widget.SquareFrameLayout>

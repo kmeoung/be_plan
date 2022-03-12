@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_gray_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="70dp">
+        <ImageView android:id="@+id/iv_icn_request" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginLeft="14dp" android:layout_marginRight="12dp" android:src="@drawable/icn_todo_recieve"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:id="@+id/tv_business" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="업무내용" app:Font="0"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_date" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="16. 06. 15" app:Font="0"/>
+        </LinearLayout>
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:maxWidth="50dp" android:text="" android:maxLines="1" android:lines="1" app:Font="0"/>
+        <ImageView android:id="@+id/iv_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="14dp" android:src="@drawable/img_user_profiles"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_task_contents" android:background="@drawable/img_thumbnail_gdt" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_left"/>
+        <kr.timehub.beplan.base.widgets.BaseFileViewPager android:id="@+id/base_view_pager" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_right"/>
+    </LinearLayout>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <android.support.v4.widget.NestedScrollView android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/small_text_color" android:id="@+id/tv_business_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="할 일 제목" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:id="@+id/tv_business_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="" app:Font="0"/>
+            </LinearLayout>
+            <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/small_text_color" android:id="@+id/tv_request_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="요청받은 내용" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:id="@+id/tv_request_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="" app:Font="0"/>
+            </LinearLayout>
+            <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_term" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/small_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="기간제한" app:Font="1"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+                    <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:id="@+id/tv_term_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="false" app:Font="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <LinearLayout android:gravity="center" android:id="@+id/ll_left_btn" android:background="@drawable/btn_grdt_04" android:layout_width="0dp" android:layout_height="38dp" android:layout_weight="1">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="요청 취소" app:Font="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/ll_right_btn" android:background="@drawable/btn_wht_04" android:layout_width="0dp" android:layout_height="38dp" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/tv_right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="닫기" app:Font="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/imagepicker_white" android:id="@+id/text_snackbar_message" android:layout_toLeftOf="@+id/button_snackbar_action" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/imagepicker_TextSmall"/>
+    <Button android:textColor="#009688" android:id="@+id/button_snackbar_action" android:background="?attr/selectableItemBackground" android:layout_marginLeft="24dp" android:text="@string/imagepicker_action_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_alignParentEnd="true" style="@style/imagepicker_TextSmall"/>
+</merge>

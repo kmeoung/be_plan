@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/wht_post_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_business" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_business_title" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="업무 타이틀" android:lines="1" app:Font="1"/>
+        <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@null" android:layout_width="match_parent" android:layout_height="70dp">
+            <ImageView android:id="@+id/iv_icn_request" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/icn_todo_recieve"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:ellipsize="end" android:id="@+id/tv_business" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="업무내용" android:lines="1" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:ellipsize="end" android:id="@+id/tv_business_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="업무내용에 대한 코멘트 입니다." android:lines="1" app:Font="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="이현우" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_request_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="16. 06 15" app:Font="0"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:src="@drawable/img_user_profiles"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

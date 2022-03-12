@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@color/glitter" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="14.33dp" android:paddingTop="15dp" android:paddingRight="14.33dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:id="@+id/tv_task" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:Font="0"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.67dp" android:text="시작" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:id="@+id/tv_start_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="AM / 09:00:06" android:layout_weight="1" app:Font="0"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/rifle_green" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.67dp" android:text="시작" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="|" android:layout_weight="1" app:Font="0"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginBottom="13.33dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/rifle_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.67dp" android:text="종료" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:id="@+id/tv_end_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="AM / 09:00:06" android:layout_weight="1" app:Font="0"/>
+            </LinearLayout>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_ell" android:background="@drawable/img_lapse" android:layout_width="106.67dp" android:layout_height="26.67dp" app:Font="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

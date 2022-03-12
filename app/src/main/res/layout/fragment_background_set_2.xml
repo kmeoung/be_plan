@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <kr.timehub.beplan.base.widgets.Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_save" android:background="@drawable/btn_02" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.5dp" android:layout_marginBottom="8.5dp" android:text="저장" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

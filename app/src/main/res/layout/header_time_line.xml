@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="13.98dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="6.67dp">
+    <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/rifle_green" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:Font="1"/>
+</LinearLayout>

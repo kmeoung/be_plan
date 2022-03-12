@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/blur_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <kr.timehub.beplan.base.objects.BaseToolBar android:id="@+id/base_toolbar" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <FrameLayout android:id="@+id/base_login_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/tv_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="38dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:srcCompat="@drawable/brand_logo"/>
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+</LinearLayout>

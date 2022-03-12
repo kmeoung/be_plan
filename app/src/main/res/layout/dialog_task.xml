@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/popup_bg_wht_01" android:layout_width="280dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:gravity="center" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="14dp" android:text="" android:layout_weight="1" app:Font="1"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/btn_close_gray"/>
+    </LinearLayout>
+    <ImageView android:background="@color/divider_color_1" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="151dp">
+        <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:background="@drawable/input_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

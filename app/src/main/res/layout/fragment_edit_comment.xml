@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@color/glitter" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <kr.timehub.beplan.base.widgets.EditText android:textSize="12sp" android:textColor="@color/rifle_green" android:gravity="top|left" android:id="@+id/et_comment" android:background="@drawable/input_bg" android:paddingLeft="11.36dp" android:paddingTop="16dp" android:paddingRight="11.36dp" android:layout_width="match_parent" android:layout_height="316.6641dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20.67dp" app:Font="0"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_comment_contents" android:background="@drawable/img_thumbnail_gdt" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="100dp">
+                <ImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_left"/>
+                <kr.timehub.beplan.base.widgets.BaseFileViewPager android:id="@+id/base_vp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_right"/>
+            </LinearLayout>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15.33sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_img" android:background="@drawable/btn_add_img" android:layout_width="match_parent" android:layout_height="36.74dp" android:layout_marginLeft="10dp" android:layout_marginTop="7dp" android:layout_marginRight="10dp" android:layout_marginBottom="6.59dp" android:text="이미지 첨부" app:Font="1"/>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:background="@color/light_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <kr.timehub.beplan.base.widgets.TextView android:textSize="15.33sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/btn_gray_01" android:layout_width="match_parent" android:layout_height="47dp" android:text="저장" app:Font="1"/>
+    </LinearLayout>
+</LinearLayout>

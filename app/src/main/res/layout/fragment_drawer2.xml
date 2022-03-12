@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/background_drawer" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/mediumjunglegreen" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="18dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp">
+            <ImageView android:layout_width="73dp" android:layout_height="20dp" android:src="@drawable/be_plan" android:contentDescription="@string/app_name"/>
+            <View android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageButton android:id="@+id/btn_alarm" android:background="@null" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/alram" android:contentDescription="@string/str_drawer_notification" android:scaleX="1.5" android:scaleY="1.5"/>
+            <ImageButton android:id="@+id/btn_option" android:background="@null" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/setting" android:contentDescription="@string/str_drawer_setting" android:scaleX="1.5" android:scaleY="1.5"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_profile" android:paddingLeft="18dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginBottom="15dp">
+            <ImageView android:id="@+id/iv_profile" android:layout_width="45dp" android:layout_height="45dp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="16sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" app:Font="0"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="13.5sp" android:textColor="@color/textColor_2" android:id="@+id/tv_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:Font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/darkjunglegreen" android:layout_width="match_parent" android:layout_height="5dp"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/base_recyclerview" android:background="@color/light_gray" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

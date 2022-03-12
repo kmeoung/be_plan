@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_status" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageButton android:id="@+id/btn_close" android:background="@null" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/btn_close_yel"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:textColor="#dc1818" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="새 프로젝트 만들기" android:layout_weight="1" app:Font="1"/>
+                <ImageButton android:id="@+id/btn_more" android:background="@null" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/btn_more_pink"/>
+            </LinearLayout>
+            <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="100dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="프로젝트 제목" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="18sp" android:textColor="@color/textColor" android:textColorHint="@color/hintColor" android:gravity="center_vertical" android:id="@+id/tv_project" android:background="@drawable/input_bg_d" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:text="" android:hint="프로젝트 제목을 입력해주세요" android:maxLines="1" android:lines="1" android:inputType="text" app:Font="0"/>
+            </LinearLayout>
+            <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:id="@+id/tv_project_member" android:layout_width="160dp" android:layout_height="match_parent" android:text="프로젝트 참여인원 (0명)" app:Font="1"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12sp" android:textColor="@color/textColor" android:layout_width="0dp" android:layout_height="match_parent" android:text="프로젝트 내 권한" android:layout_weight="1" app:Font="1"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

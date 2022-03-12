@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <kr.timehub.beplan.base.widgets.BaseImagesViewpager android:id="@+id/base_vp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/ll_header" android:background="@color/translucency" android:layout_width="match_parent" android:layout_height="73.33dp" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_close" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/rectangle_3_copy_3_vd" android:scaleType="centerInside"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="14.24sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_img_count" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_weight="1" app:Font="1"/>
+                <android.support.v4.widget.Space android:layout_width="45dp" android:layout_height="45dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom_list" android:background="@color/translucency" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_left" android:layout_width="22.33dp" android:layout_height="match_parent" android:src="@drawable/btn_left"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/base_rv" android:paddingTop="19dp" android:paddingBottom="19dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_right" android:layout_width="22.33dp" android:layout_height="match_parent" android:src="@drawable/btn_right"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

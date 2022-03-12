@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/iv_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/btn_check_on"/>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:id="@+id/tv_business_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="업무 타이틀" app:Font="1"/>
+        </LinearLayout>
+        <ImageView android:background="#e0e9f5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="52dp">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="43dp" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="15sp" android:textColor="@color/textColor" android:id="@+id/tv_business" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="업무내용" app:Font="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_task_contents" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="100dp">
+            <ImageView android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_left"/>
+            <kr.timehub.beplan.base.widgets.BaseFileViewPager android:id="@+id/base_view_pager" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_right"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="51dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_photo" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="15dp" android:layout_marginRight="14dp" android:src="@drawable/splash_bg"/>
+                <kr.timehub.beplan.base.widgets.TextView android:textSize="12dp" android:textColor="@color/textColor" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="이현우" app:Font="0"/>
+                <ImageView android:id="@+id/iv_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bdg_me"/>
+            </LinearLayout>
+            <kr.timehub.beplan.base.widgets.TextView android:textSize="10sp" android:textColor="@color/grayColor" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="16. 06. 15" app:Font="0"/>
+        </LinearLayout>
+        <ImageView android:background="@color/project_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</LinearLayout>
